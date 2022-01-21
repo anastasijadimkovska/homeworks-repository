@@ -35,37 +35,39 @@ function Animal(name, kind) {
     this.name = name;
     this.kind = kind;
     this.speak = function (msg) {
-        console.log(`${kind.value} named ${name.value} says ${msg}!!!`);
+        console.log(`${this.kind} named ${this.name} says ${msg}!!!`);
     }
 };
-let animal = new Animal(animalName, animalKind)
 btn.addEventListener('click', () => {
-    console.log(animal.speak(msg.value));
+    let animal = new Animal(animalName.value, animalKind.value)
+    animal.speak(msg.value);
 });
 
 
 //homework part 3
 let title = document.querySelector('#title');
 let author = document.querySelector('#author');
-let readingStatus = document.querySelector('#status')
+let readingStatus = document.querySelector('#readingStatus');
 let submitBtn = document.querySelector('.btn');
 
 function Books(title, author, readingStatus) {
     this.title = title;
     this.author = author;
     this.readingStatus = readingStatus;
+    // this.message = readingStatus ? `Already read ${this.title} by ${this.author}` : `You still need to read ${this.title} by ${this.author}`;
     this.bookInfo = function () {
-        let status = readingStatus.value;
-        if (status == 'true') {
-            alert (`Already read ${title.value} by ${author.value}`)
-        } else if (status == 'false') {
-           alert(`You still need to read ${title.value} by ${author.value}`)
+        // alert(this.message);
+        if (this.readingStatus) {
+            alert (`Already read ${this.title} by ${this.author}}`)
         } else {
-            alert(`Please enter 'true' or 'false' in the last field!`)
-        };
+            alert(`You still need to read ${this.title} by ${this.author}`)
+        }
      }
 }
-let someBook = new Books (title, author, readingStatus)
+
 submitBtn.addEventListener('click', () => {
-    someBook.bookInfo()
+    let someBook = new Books (title.value, author.value, readingStatus.checked)
+    someBook.bookInfo();
+    console.log(someBook);
 })
+
