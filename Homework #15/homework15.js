@@ -20,6 +20,7 @@ function isColor(strColor) {
 
 $(document).ready(function () {
     $('#button').first().click(() => {
+        // if CSS.supports()
         if (isColor(color.val()) && text.val()) {
             // headings.html(`<h1>
             // ${text.val()}
@@ -34,3 +35,14 @@ $(document).ready(function () {
     });
 });
 
+//print digints of number
+const myNum = 9564;
+let myNumber = String(myNum);
+for (let i = 0; i < myNumber.length; i++){
+    console.log(myNumber[i])
+};
+
+//or 
+const myNum = 6574;
+let digits = myNum.toString().split("");
+console.log(digits);

@@ -1,0 +1,10 @@
+.deleted {
+    text-decoration: line-through;
+}
+
+li {
+    width: 20%;
+    display: flex;    
+    align-items:middle;
+    justify-content: space-evenly;  
+}
