@@ -25,19 +25,28 @@ const makeTable = (element, data) => {
     })};
 
     $('.rocketship').click(() =>{
-        $(function() {
-            $.ajax({
-                url: 'https://swapi.dev/api/starships/9/',
-                success: res => {
-                    const table = $('#result');
-                    table.addClass("table table-dark table-hover")
-                    console.log({x: res.name});
-                    printName(res.name);
-                    makeTable(table, res)
-                },
-                error: err => {
-                    console.log
-                }
-            })
-        });
+        // $(function() {
+        //     $.ajax({
+        //         url: 'https://swapi.dev/api/starships/9/',
+        //         success: res => {
+        //             const table = $('#result');
+        //             table.addClass("table table-dark table-hover")
+        //             console.log({x: res.name});
+        //             printName(res.name);
+        //             makeTable(table, res)
+        //         },
+        //         error: err => {
+        //             console.log
+        //         }
+        //     })
+        // });
+        async function fetchData(url) {
+            let call = await fetch(url);
+            let dataJson = await call.json();
+            return dataJson;
+        }
+        fetchData('https://swapi.dev/api/starships')
+        .then(data => {
+            console.log(data);
+        })
      })
