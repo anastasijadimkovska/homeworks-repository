@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Rick and Morty table</title>
+</head>
+
+<body>    
+    <button id="loadData" class="btn btn-outline-info btn-lg" >Load Data</button>
+    <table id="table"  class="table table-success table-striped  table-hover" hidden>
+        <thead  id="thead">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Air Date</th>
+            <th>Url</th>
+            <th>Episode</th>
+            <th></th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <div id="buttonWrapper">
+        <button class="btn btn-secondary" id="prev" hidden>Previous</button>
+    <button class="btn btn-secondary" id="next" hidden>Next</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
