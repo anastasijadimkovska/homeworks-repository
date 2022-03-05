@@ -108,3 +108,8 @@ tr:hover{
 table{
     width: 100%;
 }
+
+.homeworldData {
+    color:white;
+background-color: rgb(39, 10, 31);
+}
