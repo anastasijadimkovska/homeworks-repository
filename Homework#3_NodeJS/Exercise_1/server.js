@@ -18,6 +18,6 @@ const server = http.createServer((request, response) => {
   }
  })
 
-//  server.listen(3000, "localhost", () => {
-//   console.log(`Server is up and running, on port ${3000}`);
-// });
+ server.listen(3000, "localhost", () => {
+  console.log(`Server is up and running, on port ${3000}`);
+});
