@@ -1,7 +1,6 @@
 const http = require("http");
 const fs = require('fs');
 const path = require("path");
-const { buffer } = require("stream/consumers");
 const newPath = path.join(__dirname, "students.txt");
 const server = http.createServer((request, response) => {
   const url = request.url;
