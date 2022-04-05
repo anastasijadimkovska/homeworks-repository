@@ -11,10 +11,12 @@ emitter.on('request', () => {
     statsData.numberOfRequests += 1;
     fs.writeFileSync(statsPath, JSON.stringify(statsData));
 }).on('student-added', () => {
+    console.log(statsData)
     statsData.numberOfStudents += 1;
+    console.log('HERE', statsData)
     fs.writeFileSync(statsPath, JSON.stringify(statsData));
-}).on('student-name-logged', () => {
-    statsData.studentNames.push(statsData);
+}).on('student-name-logged', (student) => {
+    statsData.studentNames.push(student);
     fs.writeFileSync(statsPath, JSON.stringify(statsData));
 });
 emitter.once('server-started', () => {
