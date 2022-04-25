@@ -1,0 +1,17 @@
+[
+    {"movieName" : "Harry Potter",
+    "movieGenre" : "Fantasy",
+    "movieReleaseDate" : "14.11.2001",
+    "movieDirector" : "Chris Columbus"
+},
+{"movieName" : "Pulp Fiction",
+    "movieGenre" : "Crime",
+    "movieReleaseDate" : "14.10.1994",
+    "movieDirector" : "Quentin Tarantino"
+},
+{"movieName" : "Eternal Sunshine of the Spotless Mind",
+    "movieGenre" : "Romance/SciFi",
+    "movieReleaseDate" : "19.03.2004",
+    "movieDirector" : "Michel Gondry"
+}
+]

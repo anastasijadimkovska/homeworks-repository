@@ -1,0 +1,34 @@
+{
+	"products": [
+		{	
+			"id": 1,
+			"type": "milk",
+			"price": 50,
+			"healthy": true
+		},
+		{
+			"id": 2,
+			"type": "chips",
+			"price": 40,
+			"healthy": false
+		},
+		{
+			"id": 3,
+			"type": "avocado",
+			"price": 300,
+			"healthy": true
+		},
+		{
+            "id": 4,
+			"type": "banana",
+			"price": 60,
+			"healthy": true
+		},
+        {
+            "id": 5,
+			"type": "milka chocolate",
+			"price": 90,
+			"healthy": false
+        }
+	]
+}
