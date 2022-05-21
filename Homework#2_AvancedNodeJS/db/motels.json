@@ -1,0 +1,18 @@
+[
+    {
+        "motelId": 1,
+        "motelName" : "Nice Motel",
+        "rating" : "4/5",
+        "motelRooms": "15",
+        "location" : "Skopje",
+        "pricePerNight": "300MKD"
+        } ,
+        {
+            "motelId": 2,
+            "motelName" : "Hello Motel",
+            "rating" : "2/5",
+            "motelRooms": "21",
+            "location" : "Skopje",
+            "pricePerNight": "150MKD"
+            } 
+]
